@@ -1,0 +1,25 @@
+FOBJ=obj/Bargaining.o obj/Get_Params.o obj/Main_Only_Money.o obj/Par_Pass.o obj/Solve_Steady.o obj/Solve_Welfare.o obj/Tools_Distributions.o obj/Tools_Extra.o obj/Tools_Fnutil.o obj/Tools_Value_Fns.o obj/Lib_Basic.o obj/Lib_Integra.o obj/Lib_Interp.o obj/Lib_Kind.o obj/Lib_Rwhdf5.o obj/Lib_Rwtxt.o obj/Lib_Smalapack.o obj/Lib_Solver.o obj/Lib_Stats.o obj/Lib_Stoch.o 
+
+Run_Only_Money: $(FOBJ)
+	$(FC) -o $@ $(FFLAGS) $(LDFLAGS) $(FOBJ) $(LIBS)
+
+obj/Bargaining.o : src/Bargaining.f90 obj/Tools_Fnutil.o obj/Lib_Interp.o obj/Lib_Solver.o obj/Par_Pass.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Get_Params.o : src/Get_Params.f90 obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Main_Only_Money.o : src/Main_Only_Money.f90 obj/Solve_Steady.o obj/Bargaining.o obj/Tools_Extra.o obj/Tools_Distributions.o obj/Tools_Value_Fns.o obj/Tools_Fnutil.o obj/Lib_Solver.o obj/Par_Pass.o obj/Get_Params.o obj/Lib_Rwhdf5.o obj/Lib_Interp.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Par_Pass.o : src/Par_Pass.f90 obj/Get_Params.o obj/Lib_Kind.o 
+obj/Solve_Steady.o : src/Solve_Steady.f90 obj/Bargaining.o obj/Tools_Extra.o obj/Tools_Distributions.o obj/Tools_Value_Fns.o obj/Tools_Fnutil.o obj/Lib_Solver.o obj/Par_Pass.o obj/Get_Params.o obj/Lib_Rwhdf5.o obj/Lib_Interp.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Solve_Welfare.o : src/Solve_Welfare.f90 obj/Solve_Steady.o obj/Bargaining.o obj/Tools_Extra.o obj/Tools_Distributions.o obj/Tools_Value_Fns.o obj/Tools_Fnutil.o obj/Lib_Solver.o obj/Par_Pass.o obj/Get_Params.o obj/Lib_Rwhdf5.o obj/Lib_Interp.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Tools_Distributions.o : src/Tools_Distributions.f90 obj/Lib_Interp.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Tools_Extra.o : src/Tools_Extra.f90 obj/Tools_Value_Fns.o obj/Tools_Fnutil.o obj/Lib_Interp.o obj/Lib_Solver.o obj/Par_Pass.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Tools_Fnutil.o : src/Tools_Fnutil.f90 obj/Lib_Kind.o 
+obj/Tools_Value_Fns.o : src/Tools_Value_Fns.f90 obj/Tools_Fnutil.o obj/Lib_Interp.o obj/Lib_Solver.o obj/Par_Pass.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Lib_Basic.o : lib/Lib_Basic.f90 obj/Lib_Kind.o 
+obj/Lib_Integra.o : lib/Lib_Integra.f90 obj/Lib_Smalapack.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Lib_Interp.o : lib/Lib_Interp.f90 obj/Lib_Smalapack.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Lib_Kind.o : lib/Lib_Kind.f90 
+obj/Lib_Rwhdf5.o : lib/Lib_Rwhdf5.f90 obj/Lib_Kind.o 
+obj/Lib_Rwtxt.o : lib/Lib_Rwtxt.f90 obj/Lib_Kind.o 
+obj/Lib_Smalapack.o : lib/Lib_Smalapack.f90 obj/Lib_Kind.o 
+obj/Lib_Solver.o : lib/Lib_Solver.f90 obj/Lib_Smalapack.o obj/Par_Pass.o obj/Lib_Rwtxt.o obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Lib_Stats.o : lib/Lib_Stats.f90 obj/Lib_Basic.o obj/Lib_Kind.o 
+obj/Lib_Stoch.o : lib/Lib_Stoch.f90 obj/Lib_Basic.o obj/Lib_Kind.o 

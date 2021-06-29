@@ -1,0 +1,5 @@
+# Build and Release Folders
+mod/
+obj/
+Output/
+Run_*
