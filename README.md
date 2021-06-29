@@ -19,7 +19,7 @@ The file [apx1_1asset](https://github.com/cbusta/msearch_1asset/apx_1asset.pdf) 
 This package is organized as follows:
 
 - The folder `src` contains the main codes that solve the model.
-- The folder `lib` provides a set of different numerical subroutines needed by the codes in `src`.
+- The folder `lib` provides a set of different numerical subroutines needed by the codes in `src`. The main program is in `Main_Only_Money.f90`.
 - The folder `plt` contains Matlab codes to plot/analyze some of the model results. These codes reproduce the figures in Appendix B.
 - In the root folder, there is the `Makefile` used to build the solution program. It is set up to run with `ifort` but it should work (if adapted) with other compilers. It also uses the `hdf5`, `mkl`, and `openmp` libraries.
 
