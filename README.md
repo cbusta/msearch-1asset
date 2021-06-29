@@ -12,7 +12,7 @@ money that becomes persistent between different periods. In this model, agents a
 
 For a description of the model and the numerical method used to solve it, see the appendix for
 "*More Money for Some: The Redistributive Effects of Open Market Operations*" in [my research webpage](https://cbustamante.co/research).
-The file [apx1_1asset](https://github.com/cbusta/msearch_1asset/apx_1asset.pdf) in this repo, provides the relevant pages of said appendix.
+The file [apx1_1asset.pdf](https://github.com/cbusta/msearch_1asset/apx_1asset.pdf) in this repo, provides the relevant pages of said appendix.
 
 ## Contents
 
