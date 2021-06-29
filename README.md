@@ -11,7 +11,7 @@ preferences are not quasi-linear. Dropping the quasi-linearity assumption genera
 money that becomes persistent between different periods. In this model, agents accumulate only one asset (money).
 
 For a description of the model and the numerical method used to solve it, see the appendix for
-"More Money for Some: The Redistributive Effects of Open Market Operations" in [my research webpage](https://cbustamante.co/research).
+"*More Money for Some: The Redistributive Effects of Open Market Operations*" in [my research webpage](https://cbustamante.co/research).
 The file [apx1_1asset](https://github.com/cbusta/msearch_1asset/apx_1asset.pdf) in this repo, provides the relevant pages of said appendix.
 
 ## Contents
@@ -27,4 +27,4 @@ This package is organized as follows:
 
 MIT license. <br>
 Citation: <br>
-Bustamante, C. (2021) "More Money for Some: The Redistributive Effects of Open Market Operations".
+Bustamante, C. (2021) *"More Money for Some: The Redistributive Effects of Open Market Operations"*.
