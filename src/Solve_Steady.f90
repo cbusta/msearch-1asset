@@ -256,7 +256,7 @@ contains
         ! ------------------------------------------------
         ! Exporting arrays
         ! ------------------------------------------------
-        out_folder    = 'Output'
+        out_folder    = 'out'
         out_data_file = trim(out_folder)//'/OutData_Steady_Chi'//chi_str//'_Mu'//mu_str//'.h5'
         call system( 'mkdir '// trim(out_folder))
 

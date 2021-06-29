@@ -9,7 +9,7 @@ fntsize = 14;
 %% Load data
 cd ..
 addpath('plot')
-cd Output
+cd out
 mkdir Figs
 Out = Read_HDF5('OutData_Steady_Chi050_Mu020.h5');
 cd ..
@@ -54,7 +54,7 @@ xlabel('$m$','Interpreter','Latex')
 ylabel('Optimal choice of money, $m^\prime$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',14)
-% print(fig1,'Output/Figs/Decision_Rule_M','-dpdf')
+% print(fig1,'out/Figs/Decision_Rule_M','-dpdf')
 
 
 %% Plot terms of trade
@@ -66,7 +66,7 @@ ylabel('$m_b$','Interpreter','Latex')
 zlabel('$d(m_b,m_s)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',14)
-% print(fig2,'Output/Figs/Terms_Trade_D','-dpdf')
+% print(fig2,'out/Figs/Terms_Trade_D','-dpdf')
 
 fig3 = figure;
 mesh(Out.KnotsM,Out.KnotsM,Out.Qsc0)
@@ -76,7 +76,7 @@ ylabel('$m_b$','Interpreter','Latex')
 zlabel('$q(m_b,m_s)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',14)
-% print(fig3,'Output/Figs/Terms_Trade_Q','-dpdf')
+% print(fig3,'out/Figs/Terms_Trade_Q','-dpdf')
 
 fig4 = figure;
 mesh(Out.KnotsM,Out.KnotsM,Out.Psc)
@@ -86,7 +86,7 @@ ylabel('$m_b$','Interpreter','Latex')
 zlabel('$p_d(m_b,m_s)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',14)
-% print(fig4,'Output/Figs/Terms_Trade_P','-dpdf')
+% print(fig4,'out/Figs/Terms_Trade_P','-dpdf')
 
 
 %% Plot distributions
@@ -105,7 +105,7 @@ xlabel('$m$','Interpreter','Latex')
 ylabel('Density','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig5,'Output/Figs/Dist_M_Nolab','-dpdf')
+% print(fig5,'out/Figs/Dist_M_Nolab','-dpdf')
 
 % Create textbox
 str_mbar  = strcat('$\bar{m} \ \  = ',num2str(Out.MBar,'%.4f'),'$');
@@ -116,7 +116,7 @@ str_inom  = strcat('$i \ \ \ \: = ',num2str(inom,'%.4f'),'$');
 annotation(fig5,'Textbox',[0.68 0.5 0.1 0.1],...
     'String',{str_mbar,str_mstdF,str_mstdG,str_infr,str_inom},...
     'Interpreter','latex','Fontsize',fntsize,'EdgeColor','none');
-% print(fig5,'Output/Figs/Dist_M','-dpdf')
+% print(fig5,'out/Figs/Dist_M','-dpdf')
 
 
 
@@ -133,7 +133,7 @@ set(gca,'Fontsize',fntsize)
 set(leg1,'box','off')
 set(leg1,'Interpreter','Latex','Fontsize',fntsize);
 set(leg1,'Location','Best');
-% print(fig6,'Output/Figs/Value_Fns','-dpdf')
+% print(fig6,'out/Figs/Value_Fns','-dpdf')
 
 
 %% Recision rules* for c2 and h2
@@ -159,7 +159,7 @@ set(leg1,'Interpreter','Latex','Fontsize',fntsize);
 set(leg1,'box','off')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig7,'Output/Figs/Decision_Rule_C+','-dpdf')
+% print(fig7,'out/Figs/Decision_Rule_C+','-dpdf')
 
 
 %% Computing price distribution in the DM
@@ -186,7 +186,7 @@ phigh = 1.05*max(Out.Grid_P(Out.Dist_P>0));
 xlim([plow,phigh])
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig8,'Output/Figs/Dist_P_Nolab','-dpdf')
+% print(fig8,'out/Figs/Dist_P_Nolab','-dpdf')
 
 % Create textbox
 str_pbar = strcat('$\bar{p}_d \; \, = ',num2str((Mean_P),'%.4f'),'$');
@@ -194,7 +194,7 @@ str_pstd = strcat('$\sigma_{pd} = ',num2str(sqrt(Var_P),'%.4f'),'$');
 annotation(fig8,'Textbox',[0.68 0.75 0.1 0.1],...
     'String',{str_pbar,str_pstd},...
     'Interpreter','latex','Fontsize',fntsize,'EdgeColor','none');
-% print(fig8,'Output/Figs/Dist_P','-dpdf')
+% print(fig8,'out/Figs/Dist_P','-dpdf')
 
 
 
@@ -207,7 +207,7 @@ ylabel('$m_b$','Interpreter','Latex')
 zlabel('$\theta_\mu(m_b,m_s;F)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig9,'Output/Figs/Terms_Trade_Mkup','-dpdf')
+% print(fig9,'out/Figs/Terms_Trade_Mkup','-dpdf')
 
 
 %% Computing markup distribution in the DM
@@ -241,7 +241,7 @@ annotation(fig10,'Textbox',[0.68 0.75 0.1 0.1],...
     'Interpreter','latex','Fontsize',fntsize,'EdgeColor','none');
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig10,'Output/Figs/Dist_Mkup','-dpdf')
+% print(fig10,'out/Figs/Dist_Mkup','-dpdf')
 
 
 

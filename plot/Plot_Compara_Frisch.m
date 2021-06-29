@@ -13,7 +13,7 @@ chivec_num = [0.0, 0.25, 0.50, 1.0, 2.0, 3.0];
 chivec_str = {'000','025','050','100','200','300'};
 cd ..
 addpath('plot')
-cd Output
+cd out
 mkdir Figs
 for i = 1:length(chivec_num)
     eval(['Out_Data_',chivec_str{i},' = Read_HDF5(''OutData_Steady_Chi',chivec_str{i},'_Mu020.h5'');';]);   
@@ -101,7 +101,7 @@ set(gca,'Fontsize',fntsize)
 set(fig1,'PaperOrientation','landscape');
 set(fig1,'PaperUnits','normalized');
 set(fig1,'PaperPosition', [0 0 1 1]);
-% print(fig1,'Output/Figs/Comp_Frisch_Dist','-dpdf')
+% print(fig1,'out/Figs/Comp_Frisch_Dist','-dpdf')
 
 
 %% Decision rules for m'
@@ -120,7 +120,7 @@ xlabel('$m$','Interpreter','Latex')
 ylabel('Money holdings, $m^\prime(m)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig2,'Output/Figs/Comp_Frisch_DR_Money','-dpdf')
+% print(fig2,'out/Figs/Comp_Frisch_DR_Money','-dpdf')
 
 
 %% Decision rules for labor
@@ -139,7 +139,7 @@ xlabel('$m$','Interpreter','Latex')
 ylabel('Labor, $h(m)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig3,'Output/Figs/Comp_Frisch_DR_Labor','-dpdf')
+% print(fig3,'out/Figs/Comp_Frisch_DR_Labor','-dpdf')
 
 
 %% Decision rules for consumption
@@ -157,5 +157,5 @@ xlabel('$m$','Interpreter','Latex')
 ylabel('Consumption, $c(m)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig4,'Output/Figs/Comp_Frisch_DR_Consumption','-dpdf')
+% print(fig4,'out/Figs/Comp_Frisch_DR_Consumption','-dpdf')
 

@@ -1,5 +1,5 @@
 # Build and Release Folders
 mod/
 obj/
-Output/
+out/
 Run_*
