@@ -2,7 +2,7 @@ module lib_stats
 
 ! Module to implement some statistical functions.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 27 Nov, 2019, 20:46
 ! v 1.30
 !

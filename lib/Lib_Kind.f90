@@ -2,7 +2,7 @@ module lib_kind
 
 ! Module to declare kind types dor double precision and integer.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 27 Nov, 2019, 17:00
 ! v 1.20
 !

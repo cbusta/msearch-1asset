@@ -2,7 +2,7 @@ module lib_stoch
 
 ! Module to implement some numerical routines that require probability distributions.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 03 Dic, 2019, 17:17
 ! v 1.60
 !

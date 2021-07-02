@@ -2,7 +2,7 @@ module lib_interp
 
 ! Module to implement some numerical interpolation routines.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 12 Feb 2021, 19:23
 ! v 1.61
 !

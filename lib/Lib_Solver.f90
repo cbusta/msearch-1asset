@@ -2,7 +2,7 @@ module lib_solver
 
 ! Module to implement some root finding and minimization routines.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 13 Mar 2020, 16:15
 ! v 2.0
 !

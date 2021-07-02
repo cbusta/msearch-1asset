@@ -2,7 +2,7 @@ module lib_rwtxt
    
 ! Module to export and import data to and from a text file.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 16 Oct 2020, 17:37
 ! v 2.21
 !

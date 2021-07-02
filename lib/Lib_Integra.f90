@@ -2,7 +2,7 @@ module lib_integra
 
 ! Module with subroutines for numerical integration
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 27 Nov, 2019, 19:11
 ! v 1.10
 !

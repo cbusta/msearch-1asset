@@ -2,7 +2,7 @@ module lib_rwhdf5
    
 ! Module to export and import data to and from an HDF5 (h5) file.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 16 Oct 2020, 17:29
 ! v 2.0
 !

@@ -2,7 +2,7 @@ module lib_smalapack
 
 ! Module to ease the usage of certain LAPACK's subroutines
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 27 Nov, 2019, 19:20
 ! v 1.10
 !

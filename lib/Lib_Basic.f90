@@ -2,7 +2,7 @@ module lib_basic
 
 ! Module to implement some (Basic) numerical routines.
 ! By: Christian Bustamante
-! Email: cbustaam@gmail.com
+! Email: mail@cbustamante.co
 ! Last modified: 16 Oct, 2020, 17:32
 ! v 2.60
 !
