@@ -5,3 +5,4 @@ out/
 Run_*
 *.vs
 *.suo
+.gitignore
