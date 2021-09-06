@@ -3,3 +3,5 @@ mod/
 obj/
 out/
 Run_*
+*.vs
+*.suo
