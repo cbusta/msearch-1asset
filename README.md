@@ -11,7 +11,7 @@ preferences are not quasi-linear. Dropping the quasi-linearity assumption genera
 money that becomes persistent across periods. In this model, agents accumulate only one asset (money).
 
 For a description of the model and the numerical method used to solve it, see the appendix for
-"*The Redistributive Effects of Changes in Public Liquidity*" in [my research webpage](https://cbustamante.co/research).
+"*The Long-Run Redistributive Effects of Monetary Policy*" in [my research webpage](https://cbustamante.co/research).
 The file `apx_1asset.pdf` in this repo, provides the relevant pages of said appendix.
 
 ## Contents
@@ -27,4 +27,4 @@ This package is organized as follows:
 
 MIT license. <br>
 Citation: <br>
-Bustamante, C. (2022) *"The Redistributive Effects of Changes in Public Liquidity"*.
+Bustamante, C. (2022). "The Long-Run Redistributive Effects of Monetary Policy," *Journal of Monetary Economics*, Forthcoming.

@@ -1,7 +1,8 @@
 % Plotting the results of solving the modified Lagos-Wright model
 % Comparing results for different Frisch elasticities
+% Part of "The Long-Run Redistributive Effects of Monetary Policy"
 % Christian Bustamante
-% Last modified: 24/03/2019 at 14:14
+% Last modified: 07/08/2023 at 20:55
 clear; clc
 rgbcol  = get(groot,'DefaultAxesColorOrder');
 fntsize = 14;
@@ -12,8 +13,7 @@ xcolor;
 chivec_num = [0.0, 0.25, 0.50, 1.0, 2.0, 3.0];
 chivec_str = {'000','025','050','100','200','300'};
 cd ..
-addpath('plot')
-cd out
+cd Output
 mkdir Figs
 for i = 1:length(chivec_num)
     eval(['Out_Data_',chivec_str{i},' = Read_HDF5(''OutData_Steady_Chi',chivec_str{i},'_Mu020.h5'');';]);   
@@ -101,7 +101,7 @@ set(gca,'Fontsize',fntsize)
 set(fig1,'PaperOrientation','landscape');
 set(fig1,'PaperUnits','normalized');
 set(fig1,'PaperPosition', [0 0 1 1]);
-% print(fig1,'out/Figs/Comp_Frisch_Dist','-dpdf')
+print(fig1,'Output/Figs/D6_Comp_Frisch_Dist','-dpdf')
 
 
 %% Decision rules for m'
@@ -120,7 +120,7 @@ xlabel('$m$','Interpreter','Latex')
 ylabel('Money holdings, $m^\prime(m)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig2,'out/Figs/Comp_Frisch_DR_Money','-dpdf')
+fixpdf(fig2,'Output/Figs/D7b_Comp_Frisch_DR_Money')
 
 
 %% Decision rules for labor
@@ -139,23 +139,5 @@ xlabel('$m$','Interpreter','Latex')
 ylabel('Labor, $h(m)$','Interpreter','Latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gca,'Fontsize',fntsize)
-% print(fig3,'out/Figs/Comp_Frisch_DR_Labor','-dpdf')
-
-
-%% Decision rules for consumption
-fig4 = figure;
-plot(KnotsM,Out_Data_000.Cstar,':s','Linewidth',2); hold on; 
-plot(KnotsM,Out_Data_025.Cstar,'-', 'Linewidth',2); hold on; 
-plot(KnotsM,Out_Data_050.Cstar,':x','Linewidth',2); hold on; 
-plot(KnotsM,Out_Data_300.Cstar,'-.','Linewidth',2,'Color',xcolo.green); hold on; 
-xlim([0,mhigh])
-leg1 = legend('$\chi=0$','$\chi=0.25$','$\chi=0.5$','$\chi=3$');
-set(leg1,'box','off');
-set(leg1,'Interpreter','Latex','Fontsize',fntsize);
-set(leg1,'Location','Southeast');
-xlabel('$m$','Interpreter','Latex')
-ylabel('Consumption, $c(m)$','Interpreter','Latex')
-set(gca,'TickLabelInterpreter','latex')
-set(gca,'Fontsize',fntsize)
-% print(fig4,'out/Figs/Comp_Frisch_DR_Consumption','-dpdf')
+fixpdf(fig3,'Output/Figs/D7a_Comp_Frisch_DR_Labor')
 
