@@ -27,4 +27,4 @@ This package is organized as follows:
 
 MIT license. <br>
 Citation: <br>
-Bustamante, C. (2022). "The Long-Run Redistributive Effects of Monetary Policy," *Journal of Monetary Economics*, Forthcoming.
+Bustamante, C. (2023). "The Long-Run Redistributive Effects of Monetary Policy," *Journal of Monetary Economics*, Forthcoming.
