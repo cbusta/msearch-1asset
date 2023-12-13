@@ -2,7 +2,7 @@ module par_pass
 ! This module contains the derived data type variables used to pass arguments into 
 ! the Lib_Solver subroutines
 !
-! More money for some
+! Part of "The Long-Run Redistributive Effects of Monetary Policy"
 ! Christian Bustamante
 ! Last modified: 14 May 2020
     

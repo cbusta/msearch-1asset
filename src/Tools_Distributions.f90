@@ -3,7 +3,7 @@ module tools_distributions
 ! This module contains subroutines to find the stationary distributions of money and bonds on
 ! both the centralized and decentralized markets. It also computes the distribution of prices.
 !
-! More money for some
+! Part of "The Long-Run Redistributive Effects of Monetary Policy"
 ! Christian Bustamante
 ! Last modified: 13 May 2020
 

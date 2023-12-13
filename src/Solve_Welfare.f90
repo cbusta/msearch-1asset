@@ -1,7 +1,7 @@
 module solve_welfare
 ! This module contains subroutines to compute th welfare cost of inflation
 !
-! More money for some
+! Part of "The Long-Run Redistributive Effects of Monetary Policy"
 ! Christian Bustamante
 ! Last modified: 13 May 2020
     

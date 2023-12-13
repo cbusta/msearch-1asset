@@ -12,6 +12,7 @@ program main_only_money
     ! --------------------------------------------------------------------------------------
     ! This program nests the solution as a function of chi (inverse Frisch elasticity)
     ! --------------------------------------------------------------------------------------
+    ! Part of "The Long-Run Redistributive Effects of Monetary Policy"
     ! Christian Bustamante
     ! June 14, 2018, 04:49
 

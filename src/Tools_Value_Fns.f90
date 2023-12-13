@@ -4,7 +4,7 @@
     ! centralized market. In the centralized market case, we need to solve for the optimal decision rules.
     ! In the decentralized market case, we only evaluate V using the ToT computed in Barganing.f90
     !
-    ! More money for some
+    ! Part of "The Long-Run Redistributive Effects of Monetary Policy"
     ! Christian Bustamante
     ! Last modified: 13 May 2020
 

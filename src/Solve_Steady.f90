@@ -5,7 +5,7 @@ module solve_steady
 ! growth rate.
 ! Modified Lagos-Wright model that allows for non-quasilinear preferences.
 !
-! More money for some
+! Part of "The Long-Run Redistributive Effects of Monetary Policy"
 ! Christian Bustamante
 ! Last modified: 14 May 2020
 

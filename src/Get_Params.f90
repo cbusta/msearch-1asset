@@ -3,7 +3,7 @@ module get_params
 ! This module retrieves model parameters and grids. This includes a header that declares
 ! contants and preallocate vectors, and two other subroutines that generate grids.
 !
-! More money for some
+! Part of "The Long-Run Redistributive Effects of Monetary Policy"
 ! Christian Bustamante
 ! Last modified: 15 May 2020
 
@@ -43,7 +43,6 @@ real(dp),parameter :: nu     = 1.5            ! DM: curvature of disutility of l
 integer,parameter  :: separa = 1              ! Is the utility function in CM addt. separable?
 real(dp),parameter :: gamma  = 1.0            ! Risk aversion parameter
 real(dp),parameter :: kappa  = 0.6            ! Scale parameter of utulity function (can go well above 1, ie 2.5 works, but not close to 0)
-!real(dp),parameter :: chi    = 0.5*0          ! Inverse of Frisch elasticity of labor supply
 
 ! Grids for M
 real(dp),parameter :: mlow   = 0.0001         ! Lowest possible level of real money holdings

@@ -2,7 +2,7 @@ module tools_fnutil
 ! This module contains the several functions that evaluate instantenous utility and 
 ! costs functions (including some marginal utilities and costs)
 !
-! More money for some
+! Part of "The Long-Run Redistributive Effects of Monetary Policy"
 ! Christian Bustamante
 ! Last modified: 13 May 2020
 

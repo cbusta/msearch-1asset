@@ -2,7 +2,7 @@ module tools_extra
 ! This module contains additional subroutines to report the current status and perform
 ! aggregation
 !
-! More money for some
+! Part of "The Long-Run Redistributive Effects of Monetary Policy"
 ! Christian Bustamante
 ! Last modified: 15 May 2020
 
